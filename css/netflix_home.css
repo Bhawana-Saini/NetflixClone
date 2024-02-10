@@ -1,0 +1,207 @@
+#netflixHome {
+    display: none;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #111;
+
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+
+
+}
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    padding: 20px 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all .5s;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav:active {
+    background-color: #111;
+}
+
+.navLeft {
+    margin-left: 10px;
+}
+
+.navLogo {
+    width: 180px;
+}
+
+.navRight {
+    position: fixed;
+    right: 30px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.avtar {
+    width: 40px;
+}
+
+#banner {
+    color: red;
+    object-fit: contain;
+    height: 644px;
+
+    background-size: cover;
+}
+
+#bannerData {
+    margin-left: 70px;
+    padding-top: 340px;
+    height: 190px;
+}
+
+#bannerTitle {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+#bannerDescription {
+    width: 45rem;
+    line-height: 1.5;
+    padding-top: 1rem;
+    font-size: .9rem;
+    max-width: 360px;
+    height: 80px;
+}
+
+#banner-btn {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    background-color: rgba(51, 51, 51, .5);
+}
+
+#banner-btn:hover {
+    color: black;
+    background-color: #e6e6e6;
+    transition: all .3s;
+}
+
+#bannerBottom {
+    height: 7.4rem;
+
+}
+
+
+.row {
+    margin-left: 20px;
+    color: white;
+}
+
+
+.rowPoster img:hover {
+
+    transform: scale(1.08);
+}
+
+.rowPoster::-webkit-scrollbar {
+    display: none;
+}
+
+.navMid {
+    position: relative;
+    right: 58%;
+}
+
+.navMid ul {
+    display: flex;
+    column-gap: 45px;
+
+}
+
+.navMid ul li {
+    list-style: none;
+
+
+}
+
+.navMid ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.navMid ul li a:hover {
+    text-decoration: rgb(51, 224, 237) underline;
+
+
+}
+
+/* .rowPoster{
+  
+    object-fit: contain;
+    width: 100%;
+    max-height: 120px;
+    margin-right: 10px;
+    transition: transform 500ms;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+} */
+
+/* .row_posterLarge{
+    object-fit: contain;
+    width: 100%;
+    max-height: 250px;
+    margin-right: 10px;
+    transition: transform 500ms;
+}
+.row_posterLarge:hover{
+transform: scale(1.09);
+opacity: 1;
+} */
+
+.rowPoster {
+    display: flex;
+    width: 100%;
+    height: 220px;
+    column-gap: 28px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px;
+    margin-right: 10px;
+
+}

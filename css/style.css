@@ -1,0 +1,309 @@
+#hindiPage {
+    display: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+
+/* home css */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://assets.nflxext.com/ffe/siteui/vlv3/16006346-87f9-4226-bc25-a1fb346a2b0c/9662d0fd-0547-4665-b887-771617268815/IN-en-20240115-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-size: cover;
+    background-position: centre;
+    padding: 10px 8%;
+    position: relative;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.language-btn {
+    background: transparent;
+    border: 1px solid #fff;
+
+}
+
+.dropbtn {
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    left: 33%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+
+/* content css */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+}
+
+.content h1 {
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.content h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.content p {
+    font-weight: 400;
+
+    line-height: 50px;
+}
+
+.emailSignIn {
+    display: flex;
+    justify-content: center;
+}
+
+.form-item {
+    position: relative;
+    margin-bottom: 15px
+}
+
+.form-item input {
+    display: block;
+    width: 308px;
+    height: 45px;
+    background: transparent;
+    border: solid 1px #ccc;
+    transition: all .3s ease;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-item input:focus {
+    border-color: #fff;
+}
+
+.form-item label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 13px;
+    left: 10px;
+    font-size: 12px;
+
+    color: #fff;
+    padding: 0 10px;
+
+    transition: all .3s ease
+}
+
+.form-item input:focus+label,
+.form-item input:valid+label {
+    font-size: 15px;
+    top: 2px
+}
+
+.form-item input:focus+label {
+    color: #fff;
+    font-size: 10px;
+}
+
+.startBtn {
+    height: 44px;
+    width: 22%;
+    font-size: 18px;
+}
+
+
+
+
+/* features/slides css */
+
+.features {
+    padding: 30px 10%;
+    font-size: 22px;
+}
+
+.feature-row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    column-gap: 10%;
+    padding: 50px 0;
+}
+
+#background-video {
+    height: fit-content;
+    width: 74%;
+    object-fit: cover;
+    position: relative;
+    left: 52px;
+    top: -260px;
+
+    z-index: -1;
+}
+
+#watchVideo {
+    height: fit-content;
+    width: 63%;
+    object-fit: cover;
+    position: relative;
+    left: 78px;
+    top: -328px;
+    z-index: -1;
+}
+
+hr {
+    height: 8px;
+    background: #323232;
+    border: none;
+}
+
+.feature-column h1 {
+    line-height: 75px;
+    font-weight: 900;
+}
+
+.feature-column p {
+    font-size: 25px;
+}
+
+.feature-column {
+    text-align: justify;
+}
+
+.feature-column img {
+    width: 100%;
+}
+
+
+
+/* footer css */
+.footer {
+    padding-left: 10%;
+    padding-top: 6%;
+    color: grey;
+}
+
+.footer-column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    line-height: 45px;
+}
+
+.footer-column ul li {
+    list-style: none;
+
+    font-size: 15px;
+}
+
+.footer-column ul li a {
+    color: grey;
+    font-size: 15px;
+}
+
+
+
+/* frequently question css  */
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.box {
+    /* border: 2px solid white; */
+    height: auto;
+    width: 70%;
+    padding: 15px;
+    line-height: 25px;
+    background: #292525;
+}
+
+.box a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.box p {
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    margin: 5px;
+    line-height: 30px;
+}

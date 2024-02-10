@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css\sigin.css">
+  <link rel="stylesheet" href="css\netflix_home.css">
+
+  <script src="js\signIn.js"></script>
+  <script src="js\app.js"></script>
+  <script src="js\netflix_home.js"></script>
+  <title>Netflix</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://static.vecteezy.com/system/resources/previews/020/335/987/non_2x/netflix-logo-netflix-icon-free-free-vector.jpg">
+</head>
+
+<body>
+
+
+  <!-- English  -->
+  <div id="homePage">
+
+    <!-- home page -->
+    <div class="home" id="home">
+      <nav class="navbar">
+        <img class="logo" src="https://www.commzoom.com/wp-content/uploads/2016/06/Netflix_2014_logo.svg_-1080x292.png"
+          alt="logo">
+        <div class="dropdown">
+          <button class="btn language-btn dropbtn" onclick="myFunction()">Language <i
+              class="fa fa-caret-down"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#homePage">English</a>
+            <a onclick="netflixInHindi()">हिंदी</a>
+          </div>
+        </div>
+        <button class="btn" onclick=" loginfun()">Sign</button>
+    </div>
+    </nav>
+
+    <div class="content">
+      <h1>
+        Unlimited movies, TV shows and more</h1>
+      <h3>Watch anywhere. Cancel anytime.</h3>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <form class="emailSignIn">
+        <div class="form-item">
+          <input type="email" id="email" autocomplete="off" required />
+          <label for="email">Email Address</label>
+        </div>
+        <button type="submit" class="btn startBtn" onclick=" loginfun()">Get Started <i
+            class="fa fa-angle-right"></i></button>
+      </form>
+    </div>
+
+    <hr>
+
+
+    <!-- slide 1 -->
+    <div class=" features ">
+      <div class="feature-row">
+        <div class="feature-column">
+          <h1>Enjoy on your TV</h1>
+          <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <div class="feature-column">
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+          <div>
+            <video id="background-video" data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted=""
+              loop="">
+              <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+
+    <!-- slide 2 -->
+    <div class="features">
+      <div class="feature-row">
+        <div class="feature-column">
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+        </div>
+        <div class="feature-column">
+          <h1>Download your shows to watch offline</h1>
+          <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+
+    <!-- slide 3 -->
+    <div class="features">
+      <div class="feature-row">
+        <div class="feature-column">
+          <h1>Watch everywhere</h1>
+          <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="feature-column">
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt="">
+          <div>
+            <video id="watchVideo" data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted=""
+              loop="">
+              <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+
+    <!-- slide 4 -->
+    <div class="features">
+      <div class="feature-row">
+        <div class="feature-column">
+          <img
+            src="https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+            alt="">
+        </div>
+        <div class="feature-column">
+          <h1>Create profiles for kids</h1>
+          <p>Send children on adventures with their favourite characters in a space made just for them—free with your
+            membership.</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+
+    <!-- question and answer section  -->
+    <div class="question">
+      <h1 style="line-height: 100px;">Frequently Asked Questions</h1>
+      <div class="box">
+        <a id="display_1" href="javascript:toggle('1');">What is Netflix?</a>
+        <p id="toggle_1" style="display: none">Netflix is a streaming
+          service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on
+          thousands of internet-connected devices.
+          <br>
+          You can watch as much as you want, whenever you want, without a
+          single ad – all for one low monthly price. There's always
+          something new to discover, and new TV shows and movies are added every week!
+        </p>
+      </div>
+      <br>
+      <div class="box">
+        <a id="display_2" href="javascript:toggle('2');">How much does Netflix cost?</a>
+        <p id="toggle_2" style="display: none"> Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming
+          device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts!
+        </p>
+      </div>
+      <br>
+      <div class="box">
+        <a id="display_3" href="javascript:toggle('3');">
+          Where can I watch?
+        </a>
+        <p id="toggle_3" style="display: none">
+          Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from
+          your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs,
+          smartphones, tablets, streaming media players and game consoles.
+          <br>
+          You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch
+          while you're on the go and without an internet connection. Take Netflix with you anywhere.
+        </p>
+      </div>
+      <br>
+      <div class="box">
+        <a id="display_4" href="javascript:toggle('4');">How do I cancel?
+        </a>
+        <p id="toggle_4" style="display: none">
+          Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account
+          online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+      </div>
+      <br>
+      <div class="box">
+        <a id="display_5" href="javascript:toggle('5');">What can I watch on Netflix?
+        </a>
+        <p id="toggle_5" style="display: none">
+          Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix
+          originals, and more. Watch as much as you want, anytime you want.</p>
+      </div>
+      <br>
+      <div class="box">
+        <a id="display_6" href="javascript:toggle('6');">Is Netflix good for kids?
+
+        </a>
+        <p id="toggle_6" style="display: none">
+          The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+          family-friendly TV shows and films in their own space.
+          <br>
+          Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content
+          kids can watch and block specific titles you don’t want kids to see.
+        </p>
+      </div>
+      <p style=" line-height: 70px">Ready to watch? Enter your email to create or restart your membership.</p>
+
+    </div>
+    <form class="emailSignIn" style="    margin-bottom: 30px;">
+      <div class="form-item">
+        <input type="email" id="email" autocomplete="off" required />
+        <label for="email">Email Address</label>
+      </div>
+      <button type="submit" class="btn startBtn" onclick=" loginfun()">Get Started <i
+          class="fa fa-angle-right"></i></button>
+    </form>
+    <hr>
+
+
+    <!-- footer  -->
+    <div class="footer">
+      <h4 style="    line-height: 50px;">Questions? Call 000-800-919-1694</h4>
+      <div class="footer-row">
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://help.netflix.com/en/node/412">FAQ</a></li>
+            <li><a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor Relations</a></li>
+            <li><a href="https://help.netflix.com/legal/privacy">Privacy</a></li>
+            <li><a href="https://fast.com/">Speed Test</a></li>
+            <li> <button class="btn language-btn">English</button></li>
+            <li>NetFlix India</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://help.netflix.com/en">Help Centre</a></li>
+            <li><a href="https://jobs.netflix.com">Jobs</a></li>
+            <li><a href="#home">Cookies Preferences</a></li>
+            <li><a href="https://help.netflix.com/legal/notices">Legal Notices</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="#signin" onclick=" dropdown()">Account</a></li>
+            <li><a href="https://devices.netflix.com/en/">Ways to Watch</a></li>
+            <li><a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a></li>
+            <li><a href="https://www.netflix.com/in/browse/genre/839338"> Only on Netflix</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://media.netflix.com/en/"> Media Centre</a></li>
+            <li><a href="https://help.netflix.com/legal/termsofuse"> Terms of Use</a></li>
+            <li><a href="https://help.netflix.com/en/contactus">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+
+
+
+  <!-- Login Page -->
+  <div class="login" id="signin">
+    <nav class="navbar">
+      <img class="logo" src="https://www.commzoom.com/wp-content/uploads/2016/06/Netflix_2014_logo.svg_-1080x292.png"
+        alt="logo">
+    </nav>
+    <form action="" class="signIn">
+      <div class="form">
+        <h3>Sign In</h3>
+        <div class="form-item formInput">
+          <input type="email" id="email" autocomplete="off" required />
+          <label for="email">Email Address</label>
+        </div>
+        <div class="form-item formInput">
+          <input type="password" autocomplete="off">
+          <label for="password">password</label>
+        </div>
+        <button class="btn" onclick=" netflixmain()">Sign In</button>
+        <p style="font-size: 13px">This page is protected by Google reCAPTCHA to ensure you're not a bot</p>
+      </div>
+    </form>
+    <div class=" signin-footer">
+      <h4 style="    line-height: 50px;">Questions? Call 000-800-919-1694</h4>
+      <div class="signin-row">
+        <div class="signin-column">
+          <ul>
+            <li><a href="https://help.netflix.com/en/node/412">FAQ</a></li>
+            <li><a href="#home">Cookies Preferences</a></li>
+          </ul>
+        </div>
+        <div class="signin-column">
+          <ul>
+            <li><a href="https://help.netflix.com/en">Help Centre</a></li>
+            <li><a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a></li>
+          </ul>
+        </div>
+        <div class="signin-column">
+          <ul>
+            <li><a href="https://help.netflix.com/legal/termsofuse"> Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="signin-column">
+        <ul>
+          <li><a href="https://help.netflix.com/legal/privacy">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Page after signin  -->
+  <div id="netflixHome">
+
+    <!-- navbar -->
+    <div class="nav">
+      <div class="navLeft">
+        <img src="https://www.commzoom.com/wp-content/uploads/2016/06/Netflix_2014_logo.svg_-1080x292.png" alt="logo"
+          class="navLogo">
+      </div>
+      <div class="navMid">
+        <ul>
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#main-row">Movies</a></li>
+          <li><a href="#banner">Browser By Languages</a></li>
+        </ul>
+      </div>
+      <div class="navRight">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAjVBMVEWqAAH9+/v///+nAAClAAD9+fn9+vr89vavJyf48PDu09P47u6/VVXmuru1MjLowcHeq6y8T0/EbW3y39/Qhoa8SkrboaHIdnazHR7KhYWuAADQjIy4PT3ryMnLfn7XmJn25OStERKvBwnDW1vx2NnFYmKzLS64P0CuISGsDQ7bpKTDZmbkvLzGcXGvFxg9Nu1RAAAD/UlEQVR4nO3cb1eiQBiGcZlnFAQRtBQL/5CVtdb2/T/egtZuytBKTeDuuX4v9uyp3efcNyKMntFOBwAAAAAAAAAAAAAAAAAAAAAAAABw1kTvyH8aQ/R1GvZzYTpssaTo4TRydzHmdmPo0aKnlHKc/I9eNGmroh5c9IoURQzHX1qMoVe7ua+Uk2h7s+vESA9iqNhaRR2/G7yrOG6jYn6cncMckaWKens0OZ+dNH+iyqgcw7czeVCa7CjXszK7Du0bclg50nJXnuwom0/z02JMTDEubEweGybn50fjDafGHLdfzyGxcXJ2YyF1HToz5gi/3lAHpsmOmltIXcfaNcawca2paGjh9KhlaG549/XJ1xUNnxpuOP+2hlLR8L7ZhjLpfldDbbpZtPA8rDhLLSxrKq7SwcxC6joqrjSXFhqWF0uOtfVSDXphyuFubIw2rJYclTZ+xzcsHh31bGXVNig/x5U7tDC5Hh0Z1qUDKwdalsejlWNncj3rfinHylIMiY5fHzZ9M9zHuO8e5bByju5nhwcvrvstvDrcxbjNDl7jP9ucPcjU2xskKvTaep9GrmPnd47A7gs46dyGd8XYxeVDm+8nipcuioOdRcmL7RwinUfPu5HW3y+VH57nrVvPAQAAAAAAAAAAAOCsSKHtEN9HxEuiKGp4e11z5HG86BabCprfunScZDia2z+TpJMGb7tDVPN76t8nWW9d1V3cdmx2FFknF392v6hxmw/izN/vDLm73NiKITLaZge7e9o8TeXtoyhK9VMrj6N0nnylDnZG2dh/+fk873Y1quzS++KnzUSGl5kq7W0btXmW+gebtIJo8OmO+Y1vnl70y/3avZaKf7zjz18+fKJkXm+y9N1SvWKrcuOf3TlMlpQPufucDKVGS9F6dr/KuoZ6jnIja1ewT5LUcNiVG8TjH/rvd0nJ23lJHPQdU738h2Hb/YqQiWM69nnLi2my0dq8six+qPX6Pg37rjK2K2Ys2tjFWyajhTlinrzr+nF6NZi8rDv6t876Zj76mU4j13Wq2hXnQfR0LotukYeKjvua+a+6O24QuPu/9ZSq7Lb/X3fLl3PpV8gvhP5Hgf8E//u/2R2UaHJO9XZEj0LjxbCuvJ4/nZ1dv0J+6UhOeiA/7tdfdVr/xoNqoh/jyivjCQ+e6oaWv2TgG4ieJWH1FfKDekGc3LT/hRUnyZcz93FwesniwcumkxPWB2ckv5tv0qjb+/DB3N8wer1+nMz+rXqvitXm7VXsu683v/eKe6ObhXG6HAyv/8l2b4qlmWwmy6urdDXdbrfTVXqVG8+Hm2KN89+8UyhlbUcCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABo2y8B3ipQZTVPOwAAAABJRU5ErkJggg=="
+          alt="avtar" class="avtar">
+      </div>
+    </div>
+
+
+    <!-- home video (banner) -->
+    <div id="banner">
+      <div id="bannerData">
+        <h1 id="bannerTitle"></h1>
+        <div id="bannerBtns">
+          <button id="banner-btn">Play</button>
+          <button id="banner-btn">My List</button>
+        </div>
+        <p id="bannerDescription"></p>
+      </div>
+      <div id="bannerBottom"></div>
+    </div>
+
+
+    <!-- row -->
+    <div id="main-row">
+      <div class="row">
+        <h2 class="rowTitle"></h2>
+        <div class="rowPoster"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <h4 style="    line-height: 50px;">Questions? Call 000-800-919-1694</h4>
+      <div class="footer-row">
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://help.netflix.com/en/node/412">FAQ</a></li>
+            <li><a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor Relations</a></li>
+            <li><a href="https://help.netflix.com/legal/privacy">Privacy</a></li>
+            <li><a href="https://fast.com/">Speed Test</a></li>
+            <li> <button class="btn language-btn">English <i class="fa fa-caret-down"></i></button></li>
+            <li>NetFlix India</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://help.netflix.com/en">Help Centre</a></li>
+            <li><a href="https://jobs.netflix.com">Jobs</a></li>
+            <li><a href="#home">Cookies Preferences</a></li>
+            <li><a href="https://help.netflix.com/legal/notices">Legal Notices</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="#signin" onclick=" dropdown()">Account</a></li>
+            <li><a href="https://devices.netflix.com/en/">Ways to Watch</a></li>
+            <li><a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a></li>
+            <li><a href="https://www.netflix.com/in/browse/genre/839338"> Only on Netflix</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://media.netflix.com/en/"> Media Centre</a></li>
+            <li><a href="https://help.netflix.com/legal/termsofuse"> Terms of Use</a></li>
+            <li><a href="https://help.netflix.com/en/contactus">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Hindi-->
+  <div id="hindiPage">
+
+    <!-- home page -->
+    <div class="home" id="home">
+      <nav class="navbar">
+        <img class="logo" src="https://www.commzoom.com/wp-content/uploads/2016/06/Netflix_2014_logo.svg_-1080x292.png"
+          alt="logo">
+        <div class="dropdown">
+          <button class="btn language-btn dropbtn hindibtn" onclick="hindiFunction()">भाषा <i
+              class="fa fa-caret-down"></i></button>
+          <div id="hindiDropdown" class="dropdown-content hindidropdown-content">
+            <a onclick="netflixInEnglish()">English</a>
+            <a onclick="netflixInHindi()">हिंदी</a>
+          </div>
+        </div>
+        <button class="btn" onclick=" hindiloginfun()">
+          साइन इन करें</button>
+    </div>
+    </nav>
+    <div class="content">
+      <h1>
+        अनलिमिटेड फ़िल्में, टीवी शो के साथ भी बहुत कुछ</h1>
+      <h3>जहां चाहें देखें. जब चाहें कैंसल करें.</h3>
+      <p>देखने के लिए तैयार हैं? अपनी मेंबरशिप बनाने या रीस्टार्ट करने के लिए अपना ईमेल एड्रेस डालें.</p>
+      <form class="emailSignIn">
+        <div class="form-item">
+          <input type="email" id="email" autocomplete="off" required />
+          <label for="email">ई-मेल एड्रेस</label>
+        </div>
+        <button type="submit" class="btn startBtn" onclick=" dropdown()"> शुरू करें <i
+            class="fa fa-angle-right"></i></button>
+      </form>
+    </div>
+
+    <hr>
+
+
+    <!-- slide 1 -->
+    <div class=" features ">
+      <div class="feature-row">
+        <div class="feature-column">
+          <h1>अपने टीवी पर आनंद लें</h1>
+          <p>स्मार्ट टीवी, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray प्लेयर के साथ ही दूसरे डिवाइस पर भी देखें.
+          </p>
+        </div>
+        <div class="feature-column">
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+          <div>
+            <video id="background-video" data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted=""
+              loop="">
+              <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+
+    <!-- slide 2 -->
+    <div class="features">
+      <div class="feature-row">
+        <div class="feature-column">
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+        </div>
+        <div class="feature-column">
+          <h1>ऑफ़लाइन देखने के लिए अपने शो डाउनलोड करें</h1>
+          <p>अपने पसंदीदा शो और फ़िल्में सेव करें, ताकि आप कभी भी इन्हें देख सकें.</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+
+    <!-- slide 3 -->
+    <div class="features">
+      <div class="feature-row">
+        <div class="feature-column">
+          <h1>हर जगह देखें</h1>
+          <p>बिना ज़्यादा पेमेंट किए, अपने फ़ोन, टैबलेट, लैपटॉप और टीवी पर अनलिमिटेड फ़िल्में और टीवी शो स्ट्रीम करें.
+          </p>
+        </div>
+        <div class="feature-column">
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt="">
+          <div>
+            <video id="watchVideo" data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted=""
+              loop="">
+              <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+
+    <!-- slide 4 -->
+    <div class="features">
+      <div class="feature-row">
+        <div class="feature-column">
+          <img
+            src="https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+            alt="">
+        </div>
+        <div class="feature-column">
+          <h1>बच्चों के लिए प्रोफ़ाइल बनाएं</h1>
+          <p>बच्चों को जाने दें अपने पसंदीदा किरदारों के साथ उस रोमांचक सफ़र पर जो सिर्फ़ उनके लिए ही है - आपकी मेंबरशिप
+            के साथ फ़्री.</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+
+    <!-- question and answer section  -->
+    <div class="question">
+      <h1 style="line-height: 100px;">अक्सर पूछे जाने वाले सवाल</h1>
+      <div class="box">
+        <a id="display_11" href="javascript:toggle('11');">Netflix क्या है?
+        </a>
+        <p id="toggle_11" style="display: none">
+          Netflix एक स्ट्रीमिंग सर्विस है जिसके ज़रिए आप हज़ारों इंटरनेट-कनेक्टेड डिवाइस पर तरह-तरह के अवॉर्ड विजेता टीवी
+          शो, फ़िल्में, ऐनिमे, डॉक्यूमेंट्रीज़ का लुत्फ़ उठा सकते हैं
+          <br>
+          आप जब चाहें, जितना चाहें, बिना किसी विज्ञापन के देख सकते हैं – सारा कॉन्टेंट बहुत कम मासिक शुल्क पर. खोजने के
+          लिए हमेशा कुछ नया होता है और हर हफ़्ते नए टीवी शो और फ़िल्में जोड़ी जाती हैं!
+        </p>
+      </div>
+      <br>
+      <div class="box">
+        <a id="display_12" href="javascript:toggle('12');">Netflix की कीमत कितनी है?</a>
+        <p id="toggle_12" style="display: none"> हर महीने की तय फ़ी देकर अपने स्मार्टफ़ोन, टैबलेट, स्मार्ट टीवी, लैपटॉप,
+          या स्ट्रीमिंग डिवाइस पर Netflix देखें. हर महीने ₹149 से ₹649 तक के प्लान. कोई एक्सट्रा कीमत या कॉन्ट्रैक्ट
+          नहीं.!</p>
+      </div>
+      <br>
+      <div class="box">
+        <a id="display_13" href="javascript:toggle('13');">
+          मैं कहां देख सकता हूं?
+        </a>
+        <p id="toggle_13" style="display: none">
+          कहीं भी, कभी भी देखें अपने पर्सनल कंप्यूटर से या स्मार्ट टीवी, स्मार्टफ़ोन, टैबलेट, स्ट्रीमिंग मीडिया प्लेयर
+          और गेम कंसोल सहित Netflix ऐप ऑफ़र करने वाले किसी भी इंटरनेट-कनेक्टेड डिवाइस पर तुरंत देखने के लिए, वेब पर
+          netflix.com पर अपने Netflix अकाउंट में साइन इन करें.
+          <br>
+          आप iOS, Android या Windows 10 ऐप से भी अपने पसंदीदा शो डाउनलोड कर सकते हैं. चलते-फिरते और बिना इंटरनेट कनेक्शन
+          के देखने के लिए डाउनलोड का उपयोग करें. Netflix को अपने साथ कहीं भी ले जाएं..
+        </p>
+      </div>
+      <br>
+      <div class="box">
+        <a id="display_14" href="javascript:toggle('14');">How do I cancel?मैं कैसे कैंसल करूं?
+          <p id="toggle_14" style="display: none">
+            Netflix लचीला है. कोई परेशान करने वाले कॉन्ट्रैक्ट नहीं और कोई बंधन नहीं हैं. आप आसानी से दो क्लिक में अपना
+            अकाउंट ऑनलाइन कैंसल कर सकते हैं. कोई कैंसलेशन फ़ीस नहीं है – अपना अकाउंट कभी भी शुरू या बंद करें.
+          </p>
+      </div>
+      <br>
+      <div class="box">
+        <a id="display_15" href="javascript:toggle('15');"> मैं Netflix पर क्या देख सकता/सकती हूं?
+        </a>
+        <p id="toggle_15" style="display: none">
+          Netflix की बहुत बड़ी लाइब्रेरी में फ़ीचर फ़िल्मों, डॉक्यूमेंट्री, टीवी शो, ऐनिमे, अवॉर्ड-विनिंग Netflix
+          ओरिजिनल्स के अलावा और भी बहुत कुछ है. आप जितना चाहें, कभी भी देखें.</p>
+      </div>
+      <br>
+      <div class="box">
+        <a id="display_16" href="javascript:toggle('16');">क्या Netflix बच्चों के लिए ठीक है?
+        </a>
+        <p id="toggle_16" style="display: none">
+          आपकी मेंबरशिप में Netflix किड्स एक्सपीरियंस शामिल है. बच्चे अपनी तरह से पारिवारिक टीवी शो और फ़िल्मों का आनंद
+          लेते हैं, लेकिन आप उनके द्वारा देखे जाने वाले कॉन्टेंट को कंट्रोल कर सकते हैं.
+          <br>
+          बच्चों की प्रोफ़ाइल में PIN से सुरक्षित पैरेंटल कंट्रोल्स होते हैं जिससे आप बच्चों को मेच्योरिटी रेटिंग वाले
+          कॉन्टेंट देखने से रोक सकते हैं और उन टाइटल को ब्लॉक कर सकते हैं जिन्हें आप नहीं चाहते हैं कि बच्चे देखें.
+        </p>
+      </div>
+      <p style=" line-height: 70px">देखने के लिए तैयार हैं? अपनी मेंबरशिप बनाने या रीस्टार्ट करने के लिए अपना ईमेल
+        एड्रेस डालें</p>
+    </div>
+    <form class="emailSignIn" style="    margin-bottom: 30px;">
+      <div class="form-item">
+        <input type="email" id="email" autocomplete="off" required />
+        <label for="email">ई-मेल एड्रेस</label>
+      </div>
+      <button type="submit" class="btn startBtn" onclick=" hindiloginfun()">शुरू करें <i
+          class="fa fa-angle-right"></i></button>
+    </form>
+    <hr>
+
+
+    <!-- footer -->
+    <div class="footer">
+      <h4 style="    line-height: 50px;">कोई सवाल है? 000-800-919-1694 पर कॉल करें</h4>
+      <div class="footer-row">
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://help.netflix.com/en/node/412">FAQ</a></li>
+            <li><a href="https://ir.netflix.net/ir-overview/profile/default.aspx">इंवेस्टर संबंध</a></li>
+            <li><a href="https://help.netflix.com/legal/privacy">प्रायवेसी</a></li>
+            <li><a href="https://fast.com/">स्पीड टेस्ट</a></li>
+            <li> <button class="btn language-btn">हिंदी </button></li>
+            <li>NetFlix भारत</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://help.netflix.com/en">सहायता केंद्र</a></li>
+            <li><a href="https://jobs.netflix.com">
+                नौकरियां</a></li>
+            <li><a href="#home">कुकी प्रेफ़रेंस</a></li>
+            <li><a href="https://help.netflix.com/legal/notices">कानूनी सूचनाएं</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="#signin" onclick=" dropdown()">अकाउंट</a></li>
+            <li><a href="https://devices.netflix.com/en/">देखने के तरीके/a></li>
+            <li><a href="https://help.netflix.com/legal/corpinfo">
+                कॉरपोरेट जानकारी</a></li>
+            <li><a href="https://www.netflix.com/in/browse/genre/839338">सिर्फ़ Netflix पर</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://media.netflix.com/en/">मीडिया केंद्र</a></li>
+            <li><a href="https://help.netflix.com/legal/termsofuse">उपयोग की शर्तें</a></li>
+            <li><a href="https://help.netflix.com/en/contactus">हमसे संपर्क करें</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <!-- login in hindi  -->
+  <div class="login" id="hindiSignin">
+    <nav class="navbar">
+      <img class="logo" src="https://www.commzoom.com/wp-content/uploads/2016/06/Netflix_2014_logo.svg_-1080x292.png"
+        alt="logo">
+    </nav>
+    <form action="" class="signIn">
+      <div class="form">
+        <h3>Sign In</h3>
+        <div class="form-item formInput">
+          <input type="email" id="email" autocomplete="off" required />
+          <label for="email">ईमेल</label>
+        </div>
+        <div class="form-item formInput">
+          <input type="password" autocomplete="off">
+          <label for="password">पासवर्ड</label>
+        </div>
+        <button class="btn" onclick="  netflixmaininHindi()">साइन इन करें</button>
+        <p style="font-size: 13px">यह पक्का करने के लिए कि आप बॉट नहीं हैं, यह पेज Google reCAPTCHA द्वारा सुरक्षित है.
+          और जानें.</p>
+      </div>
+    </form>
+    <div class=" signin-footer">
+      <h4 style="    line-height: 50px;">कोई सवाल है? 000-800-919-1694 पर कॉल करें</h4>
+      <div class="signin-row">
+        <div class="signin-column">
+          <ul>
+            <li><a href="https://help.netflix.com/en/node/412">FAQ</a></li>
+            <li><a href="#home">कुकी प्रेफ़रेंस</a></li>
+          </ul>
+        </div>
+        <div class="signin-column">
+          <ul>
+            <li><a href="https://help.netflix.com/en">सहायता केंद्र</a></li>
+            <li><a href="https://help.netflix.com/legal/corpinfo"> कॉरपोरेट जानकारी</a></li>
+          </ul>
+        </div>
+        <div class="signin-column">
+          <ul>
+            <li><a href="https://help.netflix.com/legal/termsofuse"> >उपयोग की शर्तें</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="signin-column">
+        <ul>
+          <li><a href="https://help.netflix.com/legal/privacy">प्रायवेसी</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+</body>
+
+</html>

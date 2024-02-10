@@ -1,0 +1,67 @@
+#signin {
+    display: none;
+
+}
+
+#hindiSignin {
+    display: none;
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://assets.nflxext.com/ffe/siteui/vlv3/16006346-87f9-4226-bc25-a1fb346a2b0c/9662d0fd-0547-4665-b887-771617268815/IN-en-20240115-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-size: cover;
+    background-position: centre;
+    padding: 10px 8%;
+    position: relative;
+}
+
+.form {
+
+    background: rgba(0, 0, 0, 0.75);
+    width: 40%;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    left: 316px;
+    top: 70px;
+
+
+}
+
+.formInput {
+    margin-left: 17%;
+}
+
+.signin-footer {
+    background: rgba(0, 0, 0, 0.75);
+    color: grey;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    top: 160px;
+}
+
+.signin-column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    line-height: 45px;
+}
+
+.signin-column ul li {
+    list-style: none;
+
+    font-size: 15px;
+}
+
+.signin-column ul li a {
+    color: grey;
+    font-size: 15px;
+}
+
+.signin-row {
+    background: rgba(0, 0, 0, 0.75);
+    color: grey;
+}
